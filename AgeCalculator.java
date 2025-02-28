@@ -17,4 +17,17 @@ public class AgeCalculator{
         return AgeCalculator;
     }
     */
+
+    private int currentyear = 2025; 
+    public int ageCalculator(int yearOfBirth){
+        int age = 2025 - yearOfBirth; 
+        int mustWait = 16 - age; 
+        if (age >= 16){
+            System.out.println("Eligible to drive"); 
+        } else{
+            System.out.println("Must wait " + mustWait +" years to drive"); 
+        }
+        return age;
+    } 
+     
 }
